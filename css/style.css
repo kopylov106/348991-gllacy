@@ -1,0 +1,30 @@
+body {
+    font-size: 14px;
+    line-height: normal;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    background-color: #849d8f;
+}
+
+.main-title {
+    font-size: 60px;
+    line-height: 60,35px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+
