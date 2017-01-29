@@ -46,24 +46,26 @@
                             <li>
                                 <a class="search" href="#"></a>
                                 <div class="search-block">
-                                    <input type="search" id="header-search" class="search-form">
-                                    <div class="label-box">
-                                        <label for="header-search" class="label">Что ищем?</label>
-                                    </div>
+                                    <form action="#" method="post">
+                                        <input type="search" id="header-search" class="search-form">
+                                        <div class="label-box">
+                                            <label for="header-search" class="label">Что ищем?</label>
+                                        </div>
+                                    </form>
                                 </div>
                             </li>
                             <li>
                                 <a class="login" href="#">Вход</a>
                                 <div class="login-block">
-                                    <form action="" method="post">
+                                    <form action="#" method="post">
                                         <input type="email" id="user-email" name="login-email">
                                         <div class="label-box">
                                             <label for="user-email" class="label">Электронная почта</label>
                                         </div>
                                         <input type="password" id="user-password" name="password">
-                                            <div class="label-box">
-                                                <label for="user-password" class="label">Пароль</label>
-                                            </div>
+                                        <div class="label-box">
+                                            <label for="user-password" class="label">Пароль</label>
+                                        </div>
                                         <input type="submit" value="Войти" class="btn btn-login">
                                         <div class="login-forget">
                                             <a class="login-ref" href="#">Забыли пароль?</a>
@@ -79,6 +81,7 @@
                                         <div class="user-card">
                                             <div class="row-card">
                                                 <div class="cell-card">
+                                                    <a class="card-cross" href="#"></a>
                                                 </div>
                                                 <div class="cell-card">
                                                     <img src="https://placehold.it//150x100">
@@ -96,6 +99,7 @@
                                             </div>
                                             <div class="row-card">
                                                 <div class="cell-card">
+                                                    <a class="card-cross" href="#"></a>
                                                 </div>
                                                 <div class="cell-card">
                                                     <img src="https://placehold.it//150x100">
@@ -112,11 +116,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="card-buy">
+                                            <span class="text-card-buy">Итого: 750 руб.</span>
+                                            <a class="btn btn-order" href="#">Оформить</a>
+                                        </div>
                                     </form>
-                                    <div class="card-buy">
-                                        <span class="text-card-buy">Итого: 750 руб.</span>
-                                        <a class="btn btn-order" href="#">Оформить</a>
-                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -141,25 +145,25 @@
                 </ul>
                 <h1 class="main-title">Сливочное мороженое</h1>
                 <div class="filter">
-                    <form class="filter-from" action="" method="get">
+                    <form class="filter-form" action="" method="get">
                        <section class="sorting">
-                           <span>Сортировка:</span>
+                           <span class="filter-text">Сортировка:</span>
                            <select name="sort">
                                <option value="popular">по популярности</option>
                            </select>
                         </section>
                         <section class="price-range">
-                            <span>Цена:</span>
+                            <span class="filter-text">Цена:</span>
                             <input type="text" id="start-price">
-                            <span>руб. -</span>
+                            <span class="filter-text">руб. -</span>
                             <input type="text" id="end-price">
-                            <span>руб.</span>
-                            <div class="slider-container"> 
+                            <span class="filter-text">руб.</span>
+                            <div class="slider-container">
                                 <div id="slider-range"></div>
                             </div>
                         </section>
                         <section class="fat-content">
-                            <span>Жирность:</span>
+                            <span class="filter-text">Жирность:</span>
                             <div class="fat-radiobutton">
                                 <label><input type="radio" name ="fat" value="0">0%</label>
                                 <label><input type="radio" name ="fat" value="10" checked>до 10%</label>
@@ -168,7 +172,7 @@
                             </div>
                         </section>
                         <section class="filler">
-                            <span>Наполнитель:</span>
+                            <span class="filter-text">Наполнитель:</span>
                             <div class="filler-checkbox">
                                 <label>
                                     <input type="checkbox" name="chocolate" checked>шоколадные
