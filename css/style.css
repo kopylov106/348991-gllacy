@@ -1,4 +1,8 @@
 body {
+    width: 1200px;
+    min-height: 2416px;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 22px;
     color: #323232;
@@ -7,9 +11,122 @@ body {
     background-color: #849d8f;
 }
 
+.container {
+    width: 1156px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header-logo {
+    width: 154px;
+    height: 64px;
+    float: left;
+}
+.main-navigation {
+    width: 346px;
+    float: left;
+}
+.user-block {
+    width: 267px;
+    float: right;
+}
+.busy-hours {
+    width: 170px;
+    margin-left: auto;
+}
+
+.free {
+    width: 1146px;
+    height: 229px;
+    margin-bottom: 40px;
+    
+}
+
+.free-jam {
+    width: 560px;
+    float: left;
+    margin-right: 26px;
+}
+
+.free-chocolate {
+    width: 560px;
+    float: right;
+}
+
+.bestseller {
+    width: 1146px;
+    min-height: 340px;
+    margin: 0 auto;
+}
+.bestseller-price {
+    width: 267px;
+    float:left;
+    margin-right: 26px;
+}
+
+.bestseller-prilce:last-child {
+    margin-right: 0;
+}
+
+.about-shop {
+    width: 1146px;
+    height: 309px;
+    margin-bottom: 40px;    
+}
+
+.blog-subscribe {
+    width: 1146px;
+    height: 220px;
+    margin-bottom: 40px;   
+}
+.blog {    
+    width: 560px;
+    float: left;
+    margin-right: 2.2%;
+}
+.subscribe{
+    width: 560px;
+    float: right;
+}
+
+.map {
+    width: 1200px;
+    height: 430px; 
+    background-image: url("/img/map.jpg");
+}
+
+/*.feedback-hidden {*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.footer-social {
+    width: 190px;
+    float: left;
+}
+.footer-documents {
+    width: 350px;
+    height: 40px;
+    margin: auto;
+}
+
+.footer-copyright {
+    width: 200px;
+    height: 76px;
+    float: right;
+}
+
+
 h1 {
     font-size: 60px;
-    line-height: 60,35px;
+    line-height: 60.35px;
     color: #ffffff;
     font-weight: 700;
 }
@@ -20,8 +137,3 @@ h2 {
     color: #323232;
     font-weight: 500;
 }
-
-
-
-
-
