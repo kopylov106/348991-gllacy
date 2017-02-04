@@ -19,7 +19,7 @@
           <nav class="main-navigation">
             <ul>
               <li class="submenu-item">
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
                   <ul class="submenu">
                     <li>
                       <span class="submenu-header">Новинки</span>
@@ -88,7 +88,7 @@
           </div>
         </div>
       </header>
-      <main class="main-content">
+      <main class="main-content container">
         <div class="slider">
           <div class="slider-control">
             <label for="slider-one" class="contol-label"></label>
@@ -169,13 +169,20 @@
             <a class="blog-ref" href="#" title="Прочитать в блоге">10 способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="subscribe">
-            <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="subscribe-solid">
+              <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <div class="subscribe-email">
                 <form action="#" method="get">
-                  <input class="email" type="email" name="user-email">
+                  <div class="email-field">
+                    <input class="email" id="client-email" type="email" name="user-email">
+                    <div class="label-box">
+                      <label for="client-email" class="label">Электронная почта</label>
+                    </div>
+                  </div>
                   <input class="btn btn-send" type="submit" name="Отправить">
                 </form>
               </div>
+            </div>
           </div>
         </div>
         <div class="map">
@@ -192,7 +199,7 @@
                 <div class="label-box">
                   <label for="feedback" class="label">Как вас зовут?</label>
                 </div>
-                <input class="feedback-input" type="email" id="send-feedback" name="feedback-email" placeholder="">
+                <input class="feedback-input" type="email" id="send-feedback" name="feedback-email">
                 <div class="label-box">
                   <label for="send-feedback" class="label">Ваша почта для ответа?</label>
                 </div>

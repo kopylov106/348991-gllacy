@@ -26,21 +26,10 @@ body {
 }
 
 .background {
-  min-width: 900px;
-  max-width: 1200px;
   margin: 0 auto;
   background-image: url("../img/header_backlight.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-color: #849d8f;
-}
-
-.main-header,
-.main-content,
-.main-footer {
-  min-width: 900px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 9px;
 }
 
 .clearfix::after {
@@ -50,8 +39,15 @@ body {
 }
 
 .container {
-  padding: 0 2.3%;
-  background-color: gray;
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2.3%;
+  padding-right: 2.3%
+}
+
+.main-header {
+  padding-top: 9px;
 }
 
 .header-logo {
@@ -101,6 +97,7 @@ body {
 }
 
 .user-block ul {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -111,18 +108,99 @@ body {
   margin-top: 20px;
 }
 
-.search-block{
+.search-block {
   position: fixed;
   display: none;
   width: 342px;
   height: 85px;
 }
 
-.login-block{
+.login-block {
   position: fixed;
   display: none;
   width: 278px;
   height: 215px;
+}
+
+.card-block {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 51px;
+  width: 539px;
+  min-height: 242px;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.card-block img {
+  border-radius: 50%;
+}
+
+.user-card {
+  display: table;
+  text-align: left;
+}
+
+.row-card {
+  display: table-row;
+}
+
+.cell-card {
+  display: table-cell;
+  padding: 5px 0;
+}
+
+.cell-card:nth-child(1) {
+  position: relative;
+  width: 21px;
+  top: 23px;
+  padding: 0 4px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -222px -39px;
+}
+
+.cell-card:nth-child(2) {
+  position: relative;
+  width: 47px;
+  top: 11px;
+}
+
+.cell-card:nth-child(3) {
+  width: 255px;
+}
+
+.cell-card:nth-child(4) {
+  width: 120px;
+}
+
+.cell-card:nth-child(5) {
+  width: 70px;
+}
+
+.text-card,
+.text-card-price {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  font-weight: 400;
+}
+
+.text-card-price {
+  margin: 0;
+  opacity: 0.6;
+}
+
+.text-card-buy {
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+  font-weight: 700;
 }
 
 .busy-hours {
@@ -180,18 +258,24 @@ body {
   color: #ffffff;
 }
 
+.free p {
+  margin-bottom: 40px;
+}
+
 .bestseller {
   margin-bottom: 40px;
 }
 
 .bestseller-price {
+  position: relative;
   float: left;
   width: 22.2%;
   margin-right: 2.2%;
 }
 
 .bestseller-price img {
-  border-radius: 133.5px;
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .bestseller-price:nth-child(4n-3) {
@@ -200,6 +284,10 @@ body {
 
 .bestseller-price:nth-child(4n) {
   margin-right: 0;
+}
+
+.bestseller-price .btn-hide {
+  display: none;
 }
 
 .about-shop {
@@ -279,11 +367,36 @@ body {
   width: 46.6%;
   height: 220px;
   margin-right: 2.3%;
-  padding: 40px 26px;
-  background-color: beige;
+  margin-bottom: 6px;
+  padding: 6px;
   background-image: url("../img/post_pattern.jpg");
   border-radius: 10px;
   box-sizing: border-box;
+}
+
+.subscribe-solid {
+  min-height: 208px;
+  padding: 34px 20px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.email-field {
+  float: left;
+  width: 100%;
+  margin-top: 55px;
+  padding-right: 11px;
+  box-sizing: border-box;
+}
+
+.email {
+  width: 82%;
+}
+
+.btn-send {
+  float: right;
+  margin-top: -44px;
 }
 
 .subscribe-text {
@@ -292,11 +405,6 @@ body {
   color: #5a5a5a;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 40px;
-}
-
-.subscribe-email {
-  background-color: azure;
 }
 
 .map {
@@ -380,4 +488,50 @@ body {
 .footer-copyright {
   float: right;
   width: 22.2%;
+}
+
+.catalog-item .btn {
+  display: none;
+}
+
+.catalog {
+  margin-bottom: 40px;
+}
+
+.product {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.price {
+  display: block;
+  position: absolute;
+  bottom: 77px;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.catalog-item {
+  position: relative;
+  float: left;
+  width: 22.2%;
+  margin-right: 2.2%;
+  margin-bottom: 40px;
+}
+
+.catalog-item img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.catalog-item:nth-child(4n-3) {
+  margin-left: 2.3%;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
