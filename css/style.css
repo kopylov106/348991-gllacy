@@ -57,9 +57,10 @@ body {
   margin-right: 10px;
 }
 
-.main-navigation {
+.main-navigation,
+.navigation-inner {
   float: left;
-  width: 380px;
+  min-width: 340px;
 }
 
 .user-block {
@@ -325,6 +326,11 @@ body {
   box-sizing: border-box;
 }
 
+.image-price,
+.catalog-image-price {
+  position: relative;
+}
+
 .bestseller-price img {
   max-width: 100%;
   border-radius: 50%;
@@ -525,9 +531,10 @@ body {
   min-height: 74px;
 }
 
-.main-footer > .container-inner {
+.main-footer .container-inner {
   display: flex;
   justify-content: space-between;
+  margin-top: 65px;
 }
 
 .footer-social {
@@ -609,19 +616,104 @@ body {
 }
 
 .social-btn-tw {
-  background-image: url("../img/twiter.png");
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -6px -4px;
 }
 
 .social-btn-inst {
-  background-image: url("../img/instagram.png");
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -55px -4px;
 }
 
 .social-btn-fb {
-  background-image: url("../img/facebook.png");
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -104px -4px;
 }
 
 .social-btn-vk {
-  background-image: url("../img/vk.png");
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -153px -4px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.breadcrumbs a{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.breadcrumbs li:last-child {
+  padding-right: 0;
+}
+
+.filter {
+  margin-bottom: 40px;
+}
+
+.filter-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.sorting {
+  float: left;
+  width: 193px;
+}
+
+.price-range {
+  float: left;
+  width: 217px;
+}
+
+.price-range [type="text"] {
+  width: 25px;
+}
+
+.fat-content {
+  float: left;
+  width: 418px;
+}
+
+.filler {
+  float: left;
+  width: 703px;
+}
+
+.btn-filter {
+  float: left;
+  width: 146px;
+  padding: 8px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+}
+
+.catalog-main-title {
+  margin: 9px 0;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .catalog-item .btn {
@@ -630,6 +722,11 @@ body {
 
 .catalog {
   margin-bottom: 40px;
+}
+
+.divider {
+  margin-bottom: 1px;
+  clear: both;
 }
 
 .product {
@@ -642,7 +739,7 @@ body {
 .price {
   display: block;
   position: absolute;
-  top: 190px;
+  bottom: 20px;
   font-size: 45px;
   line-height: 45px;
   color: #ffffff;
@@ -652,9 +749,9 @@ body {
 .catalog-item {
   position: relative;
   float: left;
-  width: 22.2%;
+  width: 23.3%;
   margin-right: 2.2%;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .catalog-item img {
@@ -662,10 +759,69 @@ body {
   border-radius: 50%;
 }
 
-.catalog-item:nth-child(4n-3) {
+.catalog-item:nth-of-type(4n+1) {
   margin-left: 0;
 }
 
-.catalog-item:nth-child(4n) {
+.catalog-item:nth-of-type(4n) {
   margin-right: 0;
+}
+
+.pagination ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.pagination li:nth-child(2) {
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 13px;
+  opacity: 0.3;
+}
+
+.pagination li:first-child {
+  vertical-align: middle;
+  padding: 0;
+  padding-right: 13px;
+}
+
+.pagination li:last-child {
+  vertical-align: middle;
+  padding: 0;
+  padding-left: 13px;
+}
+
+.pagination a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.arrow {
+  width: 7px;
+  height: 14px;
+}
+
+.arrow-left {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -769px -4px;
+}
+
+.arrow-right {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -747px -4px;
 }
