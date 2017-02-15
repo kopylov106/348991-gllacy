@@ -15,18 +15,18 @@
         <header class="main-header">
           <div class="container-inner clearfix">
             <div class="header-logo">
-              <img src="img/logo.png" width="154" height="64" alt="GlassyShop">
+              <img src="img/logo.png" width="150" height="64" alt="GlassyShop">
             </div>
             <nav class="main-navigation">
-              <ul>
+              <ul class="topmenu">
                 <li class="submenu-item">
-                  <a href="catalog.html">Каталог</a>
+                  <a href="#">Каталог</a>
                     <ul class="submenu">
                       <li>
                         <span class="submenu-header">Новинки</span>
                       </li>
                       <li>
-                        <a href="#">Сливочное</a>
+                        <a href="catalog.html">Сливочное</a>
                       </li>
                       <li>
                         <a href="#">Щербеты</a>
@@ -49,8 +49,8 @@
             </nav>
             <div class="user-block">
               <ul>
-                <li>
-                  <a class="search" href="#">S</a>
+                <li class="user-search">
+                  <a class="search" href="#"></a>
                   <div class="search-block">
                     <input type="search" id="header-search" class="search-form">
                     <div class="label-box">
@@ -61,7 +61,7 @@
                 <li>
                   <a class="login" href="#">Вход</a>
                   <div class="login-block">
-                    <form action="" method="post">
+                    <form action="#" method="post">
                       <input type="email" id="user-email" name="login-email">
                       <div class="label-box">
                         <label for="user-email" class="label">Электронная почта</label>
@@ -92,19 +92,34 @@
         <main class="main-content">
           <div class="container-inner">
             <div class="slider clearfix">
-              <div class="slider-image"></div>
               <div class="slider-control">
                 <label for="slider-one" class="control-label"></label>
                 <label for="slider-two" class="control-label"></label>
                 <label for="slider-three" class="control-label"></label>
               </div>
-              <div class="slider-title">
-                <h1 class="main-title">Крем-брюле и пломбир с малиновым джемом</h1>
-                <!-- <h1 class="main-title">Шоколадный пломбир и лимонный сорбет</h1> -->
-                <!-- <h1 class="main-title">Пломбир с помадкой и клубничный щербет</h1> -->
+              <div class="slide" id="first-slide">
+                <div class="slider-title">
+                  <h1 class="main-title">Крем-брюле и пломбир с малиновым джемом</h1>
+                </div>
+                <div class="slider-btn">
+                  <a class="btn btn-slide">Давайте оба!</a>
+                </div>
               </div>
-              <div class="slider-btn">
-                <a class="btn btn-slide" href="#">Давайте оба!</a>
+              <div class="slide" id="second-slide">
+                <div class="slider-title">
+                <h1 class="main-title">Шоколадный пломбир и лимонный сорбет</h1>
+                </div>
+                <div class="slider-btn">
+                  <a class="btn btn-slide">Давайте оба!</a>
+                </div>
+              </div>
+              <div class="slide" id="third-slide">
+                <div class="slider-title">
+                <h1 class="main-title">Пломбир с помадкой и клубничный щербет</h1>
+                </div>
+                <div class="slider-btn">
+                  <a class="btn btn-slide">Давайте оба!</a>
+                </div>
               </div>
             </div>
             <div class="free clearfix">
@@ -121,38 +136,47 @@
             </div>
             <div class="bestseller clearfix">
               <article class="bestseller-price">
+                <div class="quick-view">
+                  <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+                  <div class="bestseller-mark"></div>
                 <div class="image-price">
                   <a href="#">
-                    <img src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                    <b class="price">310 р/кг</b>
+                    <img src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+                    <b class="price">310 &#8381/кг</b>
                   </a>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                <a class="btn btn-hide" href="#">Быстрый просмотр</a>
               </article>
               <article class="bestseller-price">
+                <div class="quick-view">
+                  <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+                  <div class="bestseller-mark"></div>
                 <div class="image-price">
-                  <a href="#"><img src="img/coffe.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-                  <b class="price">380 р/кг</b>
+                  <a href="#"><img src="img/coffe.jpg" alt="Сливочно-кофейное с кусочками шоколада"></a>
+                  <b class="price">380 &#8381/кг</b>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!">Сливочно-кофейное с кусочками шоколада</a>
-                <a class="btn btn-hide" href="#">Быстрый просмотр</a>
               </article>
               <article class="bestseller-price">
+                <div class="quick-view">
+                  <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+                  <div class="bestseller-mark"></div>
                 <div class="image-price">
-                  <a href="#"><img src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                  <b class="price">355 р/кг</b>
+                  <a href="#"><img src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+                  <b class="price">355 &#8381/кг</b>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                <a class="btn btn-hide" href="#">Быстрый просмотр</a>
               </article>
               <article class="bestseller-price">
+                <div class="quick-view">
+                  <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+                <div class="bestseller-mark"></div>
                 <div class="image-price">
-                  <a href="#"><img src="img/creme_brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
-                  <b class="price">415 р/кг</b>
+                  <a href="#">
+                    <img src="img/creme_brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+                  <b class="price">415 &#8381/кг</b>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!">Сливочное крем-брюле с карамельной подливкой</a>
-                <a class="btn btn-hide" href="#">Быстрый просмотр</a>
               </article>
             </div>
             <section class="about-shop clearfix">
@@ -163,12 +187,12 @@
                     <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                   </li>
                   <li>
-                    <img src="img/sheet_mini.png" width="49" height="49">
-                    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качетсва. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-                  </li>
-                  <li>
                     <img src="img/cow_mini.png" width="49" height="49">
                     <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                  </li>
+                  <li>
+                    <img src="img/sheet_mini.png" width="49" height="49">
+                    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качетсва. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                   </li>
                   <li>
                     <img src="img/thermometer_mini.png" width="49" height="49">
@@ -192,7 +216,7 @@
                           <label for="client-email" class="label">Электронная почта</label>
                         </div>
                       </div>
-                      <input class="btn btn-send" type="submit" name="Отправить">
+                      <input class="btn btn-send" type="submit" value="Отправить">
                     </form>
                   </div>
                 </div>
@@ -200,6 +224,8 @@
             </div>
           </div>
           <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599103659049!2d30.32178190115642!3d59.938794193592244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487150973403" width="100%" height="430" frameborder="0" style="border:0">
+            </iframe>
             <section class="requisites">
               <span>Адрес главного офиса<br>и офлайн магазина:</span><br>
               <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong><br>
@@ -208,8 +234,10 @@
               <span>(с 10 до 20 ежедневно)</span>
               <a class="btn btn-feedback" href="#">Форма обратной связи</a>
               <section class="feedback-hidden">
+                <button class="feedback-hidden-close" type="button" title="Закрыть">Закрыть</button>
+                <span class="feedback-title">Мы обязательно вам ответим!</span>
                 <form action="#" method="post">
-                  <input class="feddback-input" type="text" id="feedback" name="feedback-name">
+                  <input class="feedback-input" type="text" id="feedback" name="feedback-name">
                   <div class="label-box">
                     <label for="feedback" class="label">Как вас зовут?</label>
                   </div>
@@ -221,7 +249,7 @@
                   <div class="label-box">
                     <label for="feedback-answer" class="label">Напишите что-нибудь...</label>
                   </div>
-                  <input class="btn-btnfeedback" type="submit" name="Отправить">
+                  <input class="btn btn-feedback" type="submit" value="Отправить">
                 </form>
               </section>
             </section>
@@ -269,5 +297,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/feedback-form.js"></script>
   </body>
 </html>
