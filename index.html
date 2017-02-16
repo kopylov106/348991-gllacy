@@ -7,9 +7,9 @@
     <title>GlassyShop</title>
   </head>
   <body>
-    <input type ="radio" name="slider-btn" id="slider-one" class="input-slider input-slider-one" checked>
-    <input type ="radio" name="slider-btn" id="slider-two" class="input-slider input-slider-two">
-    <input type ="radio" name="slider-btn" id="slider-three" class="input-slider input-slider-three">
+    <input class="input-slider input-slider-one" type ="radio" id="slider-one" name="slider-btn" checked>
+    <input class="input-slider input-slider-two" type ="radio" id="slider-two" name="slider-btn" >
+    <input class="input-slider input-slider-three" type ="radio" id="slider-three" name="slider-btn" >
     <div class="background">
       <div class="container">
         <header class="main-header">
@@ -21,23 +21,23 @@
               <ul class="topmenu">
                 <li class="submenu-item">
                   <a href="#">Каталог</a>
-                    <ul class="submenu">
-                      <li>
-                        <span class="submenu-header">Новинки</span>
-                      </li>
-                      <li>
-                        <a href="catalog.html">Сливочное</a>
-                      </li>
-                      <li>
-                        <a href="#">Щербеты</a>
-                      </li>
-                      <li>
-                        <a href="#">Фруктовый лед</a>
-                      </li>
-                      <li>
-                        <a href="#">Мелорин</a>
-                      </li>
-                    </ul>
+                  <ul class="submenu">
+                    <li>
+                      <span class="submenu-header">Новинки</span>
+                    </li>
+                    <li>
+                      <a href="catalog.html">Сливочное</a>
+                    </li>
+                    <li>
+                      <a href="#">Щербеты</a>
+                    </li>
+                    <li>
+                      <a href="#">Фруктовый лед</a>
+                    </li>
+                    <li>
+                      <a href="#">Мелорин</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#">Доставка и оплата</a>
@@ -52,10 +52,12 @@
                 <li class="user-search">
                   <a class="search" href="#"></a>
                   <div class="search-block">
-                    <input type="search" id="header-search" class="search-form">
-                    <div class="label-box">
-                      <label for="header-search" class="label">Что ищем?</label>
-                    </div>
+                    <form action="#" method="get">
+                      <input class="search-form" type="search" id="header-search">
+                        <div class="label-box">
+                          <label class="label" for="header-search">Что ищем?</label>
+                        </div>
+                    </form>
                   </div>
                 </li>
                 <li>
@@ -64,13 +66,13 @@
                     <form action="#" method="post">
                       <input type="email" id="user-email" name="login-email">
                       <div class="label-box">
-                        <label for="user-email" class="label">Электронная почта</label>
+                        <label class="label" for="user-email">Электронная почта</label>
                       </div>
                       <input type="password" id="user-password" name="password">
                       <div class="label-box">
-                        <label for="user-password" class="label">Пароль</label>
+                        <label class="label" for="user-password">Пароль</label>
                       </div>
-                      <input type="submit" value="Войти" class="btn btn-login">
+                      <input class="btn btn-login" type="submit" value="Войти">
                       <div class="login-forget">
                         <a class="login-ref" href="#">Забыли пароль?</a>
                         <a class="login-ref" href="#">Новая регистрация</a>
@@ -91,11 +93,11 @@
         </header>
         <main class="main-content">
           <div class="container-inner">
-            <div class="slider clearfix">
+            <div class="slider">
               <div class="slider-control">
-                <label for="slider-one" class="control-label"></label>
-                <label for="slider-two" class="control-label"></label>
-                <label for="slider-three" class="control-label"></label>
+                <label class="control-label" for="slider-one" ></label>
+                <label class="control-label" for="slider-two" ></label>
+                <label class="control-label" for="slider-three"></label>
               </div>
               <div class="slide" id="first-slide">
                 <div class="slider-title">
@@ -107,7 +109,7 @@
               </div>
               <div class="slide" id="second-slide">
                 <div class="slider-title">
-                <h1 class="main-title">Шоколадный пломбир и лимонный сорбет</h1>
+                  <h1 class="main-title">Шоколадный пломбир и лимонный сорбет</h1>
                 </div>
                 <div class="slider-btn">
                   <a class="btn btn-slide">Давайте оба!</a>
@@ -115,7 +117,7 @@
               </div>
               <div class="slide" id="third-slide">
                 <div class="slider-title">
-                <h1 class="main-title">Пломбир с помадкой и клубничный щербет</h1>
+                  <h1 class="main-title">Пломбир с помадкой и клубничный щербет</h1>
                 </div>
                 <div class="slider-btn">
                   <a class="btn btn-slide">Давайте оба!</a>
@@ -139,7 +141,7 @@
                 <div class="quick-view">
                   <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
                 </div>
-                <div class="bestseller-mark"></div>
+                <div class="bestseller-mark" aria-label="Хит продаж"></div>
                 <div class="image-price">
                   <a href="#">
                     <img src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -151,10 +153,11 @@
               <article class="bestseller-price">
                 <div class="quick-view">
                   <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
-                <div class="bestseller-mark"></div>
+                  <div class="bestseller-mark" aria-label="Хит продаж"></div>
                 <div class="image-price">
-                  <a href="#"><img src="img/coffe.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-                  <b class="price">380&#8381/кг</b>
+                  <a href="#">
+                    <img src="img/coffe.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                    <b class="price">380&#8381/кг</b>
                   </a>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-кофейное с кусочками шоколада</span></a>
@@ -162,7 +165,7 @@
               <article class="bestseller-price">
                 <div class="quick-view">
                   <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
-                  <div class="bestseller-mark"></div>
+                <div class="bestseller-mark" aria-label="Хит продаж"></div>
                 <div class="image-price">
                   <a href="#">
                     <img src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -174,7 +177,7 @@
               <article class="bestseller-price">
                 <div class="quick-view">
                   <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
-                <div class="bestseller-mark"></div>
+                <div class="bestseller-mark" aria-label="Хит продаж"></div>
                 <div class="image-price">
                   <a href="#">
                     <img src="img/creme_brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -185,7 +188,7 @@
               </article>
             </div>
             <section class="about-shop clearfix">
-              <h2 class="subtitle">Магазин Глейси &#8212 это онлайн и оффлайн магазин по продаже мороженого собственного производства на развес</h2>
+              <h2 class="subtitle">Магазин Глейси &#8212 это онлайн и оффлайн магазин по продаже мороженого собственного производства на развес.</h2>
                 <ul>
                   <li>
                     <img src="img/icecream_mini.png" width="49" height="49">
@@ -204,7 +207,7 @@
                     <p>Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                   </li>
                 </ul>
-              </section>
+            </section>
             <div class="blog-subscribe clearfix">
               <div class="blog">
                 <p class="blog-title">Новое в нашем блоге</p>
@@ -214,11 +217,11 @@
                 <div class="subscribe-solid">
                   <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <div class="subscribe-email clearfix">
-                    <form action="#" method="get">
+                    <form action="#" method="post">
                       <div class="email-field">
                         <input class="email" id="client-email" type="email" name="user-email">
                         <div class="label-box">
-                          <label for="client-email" class="label">Электронная почта</label>
+                          <label class="label" for="client-email">Электронная почта</label>
                         </div>
                       </div>
                       <input class="btn btn-send" type="submit" value="Отправить">
@@ -228,75 +231,75 @@
               </div>
             </div>
           </div>
+          <div class="map">
+            <img src="img/map.jpg" width="1200" height="430" alt="Здесь должна быть карта с нашим местоположением">
+            <section class="requisites">
+              <span>Адрес главного офиса<br>и офлайн магазина:</span><br>
+              <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong><br><br>
+              <span>Для заказов по телефону:</span><br>
+              <strong>8 812 450-25-25</strong><br>
+              <span>(с 10 до 20 ежедневно)</span>
+              <a class="btn btn-feedback" href="#">Форма обратной связи</a>
+            </section>
+            <section class="feedback-hidden">
+              <button class="feedback-hidden-close" type="button" title="Закрыть">Закрыть</button>
+              <span class="feedback-title">Мы обязательно вам ответим!</span>
+              <form action="#" method="post">
+                <input class="feedback-input" type="text" id="feedback" name="feedback-name">
+                <div class="label-box">
+                  <label class="label" for="feedback">Как вас зовут?</label>
+                </div>
+                <input class="feedback-input" type="email" id="send-feedback" name="feedback-email">
+                <div class="label-box">
+                  <label class="label" for="send-feedback">Ваша почта для ответа?</label>
+                </div>
+                <textarea class="feedback-input" id="feedback-answer" name="user-answer"></textarea>
+                <div class="label-box">
+                  <label class="label" for="feedback-answer">Напишите что-нибудь...</label>
+                </div>
+                <input class="btn btn-feedback" type="submit" value="Отправить">
+              </form>
+            </section>
+          </div>
         </main>
-    <div class="map">
-      <img src="img/map.jpg" width="1200" height="430" alt="Здесь должна быть карта с нашим местоположением">
-      <section class="requisites">
-        <span>Адрес главного офиса<br>и офлайн магазина:</span><br>
-        <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong><br><br>
-        <span>Для заказов по телефону:</span><br>
-        <strong>8 812 450-25-25</strong><br>
-        <span>(с 10 до 20 ежедневно)</span>
-        <a class="btn btn-feedback" href="#">Форма обратной связи</a>
-        <section class="feedback-hidden">
-          <button class="feedback-hidden-close" type="button" title="Закрыть">Закрыть</button>
-          <span class="feedback-title">Мы обязательно вам ответим!</span>
-          <form action="#" method="post">
-            <input class="feedback-input" type="text" id="feedback" name="feedback-name">
-            <div class="label-box">
-              <label for="feedback" class="label">Как вас зовут?</label>
-            </div>
-            <input class="feedback-input" type="email" id="send-feedback" name="feedback-email">
-            <div class="label-box">
-              <label for="send-feedback" class="label">Ваша почта для ответа?</label>
-            </div>
-            <textarea class="feedback-input" id="feedback-answer" name="user-answer" rows="5"></textarea>
-            <div class="label-box">
-              <label for="feedback-answer" class="label">Напишите что-нибудь...</label>
-            </div>
-            <input class="btn btn-feedback" type="submit" value="Отправить">
-          </form>
-        </section>
-      </section>
-    </div>
         <footer class="main-footer">
           <div class="container-inner">
             <section class="footer-social">
-            <ul>
-              <li>
-                <a class="social-btn social-btn-tw" href="#"></a>
-              </li>
-              <li>
-                <a class="social-btn social-btn-inst" href="#"></a>
-              </li>
-              <li>
-                <a class="social-btn social-btn-fb" href="#"></a>
-              </li>
-              <li>
-                <a class="social-btn social-btn-vk" href="#"></a>
-              </li>
-            </ul>
-          </section>
+              <ul>
+                <li>
+                  <a class="social-btn social-btn-tw" href="#" title="Наш Твитер"></a>
+                </li>
+                <li>
+                  <a class="social-btn social-btn-inst" href="#" title="Наш Интсаграм"></a>
+                </li>
+                <li>
+                  <a class="social-btn social-btn-fb" href="#" title="Наш Фэйсбук"></a>
+                </li>
+                <li>
+                  <a class="social-btn social-btn-vk" href="#" title="Наш Вконтакт"></a>
+                </li>
+              </ul>
+            </section>
             <section class="footer-documents">
-            <ul>
-              <li>
-                <a class="providers" href="#">Для поставщиков</a>
-              </li>
-              <li>
-                <a href="#">Наши документы</a>
-              </li>
-              <li>
-                <a href="#">О производстве</a>
-              </li>
-              <li>
-                <a href="#">Экологические стандарты</a>
-              </li>
-            </ul>
-          </section>
+              <ul>
+                <li>
+                  <a class="providers" href="#">Для поставщиков</a>
+                </li>
+                <li>
+                  <a href="#">Наши документы</a>
+                </li>
+                <li>
+                  <a href="#">О производстве</a>
+                </li>
+                <li>
+                  <a href="#">Экологические стандарты</a>
+                </li>
+              </ul>
+            </section>
             <section class="footer-copyright">
-            <a href="#"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="HTML Academy"></a>
-            Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy 2017
-          </section>
+              <a href="#"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="HTML Academy"></a>
+              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy 2017
+            </section>
           </div>
         </footer>
       </div>

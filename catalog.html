@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -49,11 +49,11 @@
                 <li class="user-search">
                   <a class="search" href="#"></a>
                   <div class="search-block">
-                    <form action="#" method="post">
-                      <input type="search" id="header-search" class="search-form">
-                      <div class="label-box">
-                        <label for="header-search" class="label">Что ищем?</label>
-                      </div>
+                    <form action="#" method="get">
+                      <input class="search-form" type="search" id="header-search">
+                        <div class="label-box">
+                          <label class="label" for="header-search">Что ищем?</label>
+                        </div>
                     </form>
                   </div>
                 </li>
@@ -63,13 +63,13 @@
                     <form action="#" method="post">
                       <input type="email" id="user-email" name="login-email">
                       <div class="label-box">
-                        <label for="user-email" class="label">Электронная почта</label>
+                        <label class="label" for="user-email">Электронная почта</label>
                       </div>
                       <input type="password" id="user-password" name="password">
                       <div class="label-box">
-                        <label for="user-password" class="label">Пароль</label>
+                        <label class="label"for="user-password">Пароль</label>
                       </div>
-                      <input type="submit" value="Войти" class="btn btn-login">
+                      <input class="btn btn-login"type="submit" value="Войти">
                       <div class="login-forget">
                         <a class="login-ref" href="#">Забыли пароль?</a>
                         <a class="login-ref" href="#">Новая регистрация</a>
@@ -87,7 +87,7 @@
                             <a class="card-cross" href="#"></a>
                           </div>
                           <div class="cell-card">
-                            <img src="img/orange_card.jpg">
+                            <img src="img/orange_card.jpg" width="33" height="33">
                           </div>
                           <div class="cell-card">
                             <span class="text-card">Пломбир с апельсиновым джемом</span>
@@ -105,7 +105,7 @@
                             <a class="card-cross" href="#"></a>
                           </div>
                           <div class="cell-card">
-                            <img src="img/strawberry_card.jpg">
+                            <img src="img/strawberry_card.jpg" width="33" height="33">
                           </div>
                           <div class="cell-card">
                             <span class="text-card">Клубничный пломбир с присыпкой из белого шоколада</span>
@@ -121,7 +121,7 @@
                       </div>
                       <div class="card-buy">
                         <span class="text-card-buy">Итого: 750 руб.</span>
-                        <button class ="btn btn-card" type="submit">Оформить заказ</button>
+                        <button class="btn btn-card" type="submit">Оформить заказ</button>
                       </div>
                     </form>
                   </div>
@@ -135,7 +135,7 @@
             <div class="inner-nav">
               <ul class="breadcrumbs">
                 <li>
-                  <a href="#">Главная</a>
+                  <a href="index.html">Главная</a>
                 </li>
                 <li>
                   <a href="#">Каталог</a>
@@ -200,17 +200,21 @@
           </div>
           <div class="catalog clearfix">
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <b class="price">310 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!"><span><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/coffe.jpg" alt="Сливочно-кофейное с кусочками шоколада">
@@ -220,7 +224,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-кофейное с кусочками шоколада</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -230,7 +236,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/creme_brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -240,7 +248,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/cowberry.jpg" alt="Сливочное с брусничным джемом">
@@ -250,7 +260,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с брусничным джемом</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
@@ -260,7 +272,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-черничное с цельными ягодами черники</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/lemon.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -270,7 +284,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-лимонное с карамельной присыпкой</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/chocolate.jpg" alt="Сливочное с шоколадной стружкой">
@@ -280,7 +296,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с шоколадной стружкой</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/vanilla.jpg" alt="Сливочно-ванильное с кусочками шоколада">
@@ -290,7 +308,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-ванильное с кусочками шоколада</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/menthol.jpg" alt="Сливочное с ментоловым сиропом">
@@ -300,7 +320,9 @@
               <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с ментоловым сиропом</span></a>
             </article>
             <article class="catalog-item">
-              <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+              <div class="quick-view">
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/black_chocolate.jpg" alt="Сливочное с кусочками черного шоколада">
@@ -311,7 +333,8 @@
             </article>
             <article class="catalog-item">
               <div class="quick-view">
-                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
+                <a class="btn btn-quick-view" href="#">Быстрый просмотр</a>
+              </div>
               <div class="catalog-image-price">
                 <a href="#">
                   <img src="img/mint.jpg" alt="Сливочное с мятным сиропом">
@@ -338,16 +361,16 @@
             <section class="footer-social">
               <ul>
                 <li>
-                  <a class="social-btn social-btn-tw" href="#"></a>
+                  <a class="social-btn social-btn-tw" href="#" title="Наш Твитер"></a>
                 </li>
                 <li>
-                  <a class="social-btn social-btn-inst" href="#"></a>
+                  <a class="social-btn social-btn-inst" href="#" title="Наш Интсаграм"></a>
                 </li>
                 <li>
-                  <a class="social-btn social-btn-fb" href="#"></a>
+                  <a class="social-btn social-btn-fb" href="#" title="Наш Фэйсбук"></a>
                 </li>
                 <li>
-                  <a class="social-btn social-btn-vk" href="#"></a>
+                  <a class="social-btn social-btn-vk" href="#" title="Наш Вконтакт"></a>
                 </li>
               </ul>
             </section>
@@ -375,5 +398,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/feedback-form.js"></script>
   </body>
 </html>
