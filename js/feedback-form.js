@@ -6,6 +6,7 @@ var username = popup.querySelector("#feedback");
 var email = popup.querySelector("#send-feedback");
 var feed = popup.querySelector("textarea");
 var storage = localStorage.getItem("username");
+var input = document.querySelectorAll("input");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -43,3 +44,16 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+for (var i = 0; i < input.length; i++) {
+  input[i].addEventListener("focusout", function() {
+    var elem = this;
+    var placeholder = this.nextElementSibling;
+    var label = placeholder.firstElementChild;
+    if (elem.value.length == 0) {
+      label.classList.remove("lostfocus");
+    } else {
+      label.classList.add("lostfocus");
+    }
+  }, false); 
+}

@@ -12,7 +12,7 @@
         <header class="main-header">
           <div class="container-inner clearfix">
             <div class="header-logo">
-              <a href="index.html"><img src="img/logo.png" width="150" height="64" alt="GlassyShop"></a>
+              <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="GlassyShop"></a>
             </div>
             <nav class="main-navigation">
               <ul class="navigation-inner">
@@ -72,7 +72,7 @@
                       <input type="submit" value="Войти" class="btn btn-login">
                       <div class="login-forget">
                         <a class="login-ref" href="#">Забыли пароль?</a>
-                        <a class="login-reg" href="#">Новая регистрация</a>
+                        <a class="login-ref" href="#">Новая регистрация</a>
                       </div>
                     </form>
                   </div>
@@ -129,34 +129,36 @@
               </ul>
             </div>
             <div class="busy-hours">
-              С 10 до 20, ежедневно<br>
-              8 812 450-25-25
+              <span class="hours">С 10 до 20, ежедневно</span><br>
+              <span class="phone">8 812 450-25-25</span>
+            </div>
+            <div class="inner-nav">
+              <ul class="breadcrumbs">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>Сливочное</li>
+              </ul>
             </div>
           </div>
         </header>
         <main class="main-content container-inner">
-          <ul class="breadcrumbs">
-            <li>
-              <a href="#">Главная</a>
-            </li>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              Сливочное
-            </li>
-          </ul>
           <h1 class="catalog-main-title">Сливочное мороженое</h1>
           <div class="filter clearfix">
             <form class="filter-form clearfix" action="#" method="get">
               <section class="sorting">
                 <span class="filter-text">Сортировка:</span>
-                <select name="sort">
-                  <option value="popular">по популярности</option>
-                  <option value="chip">сначала недорогие</option>
-                  <option value="expensive">сначала дорогие</option>
-                  <option value="fat">по жирности</option>
-                </select>
+                <div class="select">
+                  <select name="sort" disabled>
+                    <option value="popular">по популярности</option>
+                    <option value="chip">сначала недорогие</option>
+                    <option value="expensive">сначала дорогие</option>
+                    <option value="fat">по жирности</option>
+                  </select>
+                </div>
               </section>
               <section class="price-range">
                 <div class="price-controls">
@@ -177,20 +179,20 @@
               <section class="fat-content">
                 <span class="filter-text">Жирность:</span>
                 <div class="fat-radiobutton">
-                  <label><input type="radio" name ="fat" value="0"><span></span>0%</label>
-                  <label><input type="radio" name ="fat" value="10" checked><span></span>до 10%</label>
-                  <label><input type="radio" name ="fat" value="30"><span></span>до 30%</label>
-                  <label><input type="radio" name ="fat" value="100"><span></span>выше 30%</label>
+                  <label><input type="radio" name ="fat" value="0"><span>0%</span></label>
+                  <label><input type="radio" name ="fat" value="10" checked><span>до 10%</span></label>
+                  <label><input type="radio" name ="fat" value="30"><span>до 30%</span></label>
+                  <label><input type="radio" name ="fat" value="100"><span>выше 30%</span></label>
                 </div>
               </section>
               <section class="filler">
                 <span class="filter-text">Наполнители:</span>
                 <div class="filler-checkbox">
-                  <label><input type="checkbox" name="chocolate" checked><span></span>шоколадные</label>
-                  <label><input type="checkbox" name="sugar" checked><span></span>сахарные присыпки</label>
-                  <label><input type="checkbox" name="fruit"><span></span>фрукты</label>
-                  <label><input type="checkbox" name="syrup"><span></span>сиропы</label>
-                  <label><input type="checkbox" name="jam"><span></span>джемы</label>
+                  <label><input type="checkbox" name="chocolate" checked><span>шоколадные</span></label>
+                  <label><input type="checkbox" name="sugar" checked><span>сахарные присыпки</span></label>
+                  <label><input type="checkbox" name="fruit"><span>фрукты</span></label>
+                  <label><input type="checkbox" name="syrup"><span>сиропы</span></label>
+                  <label><input type="checkbox" name="jam"><span>джемы</span></label>
                 </div>
               </section>
               <input class="btn-filter" type="submit" value="Применить">
@@ -205,7 +207,7 @@
                   <b class="price">310 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -215,7 +217,7 @@
                   <b class="price">380 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочно-кофейное с кусочками шоколада</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-кофейное с кусочками шоколада</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -225,7 +227,7 @@
                   <b class="price">355 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -235,7 +237,7 @@
                   <b class="price">415 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное крем-брюле с карамельной подливкой</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -245,7 +247,7 @@
                   <b class="price">325 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное с брусничным джемом</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с брусничным джемом</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -255,7 +257,7 @@
                   <b class="price">410 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочно-черничное с цельными ягодами черники</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-черничное с цельными ягодами черники</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -265,7 +267,7 @@
                   <b class="price">375 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочно-лимонное с карамельной присыпкой</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-лимонное с карамельной присыпкой</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -275,7 +277,7 @@
                   <b class="price">320 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное с шоколадной стружкой</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с шоколадной стружкой</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -285,7 +287,7 @@
                   <b class="price">440 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочно-ванильное с кусочками шоколада</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-ванильное с кусочками шоколада</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -295,7 +297,7 @@
                   <b class="price">435 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное с ментоловым сиропом</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с ментоловым сиропом</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view"><a class="btn btn-quick-view" href="#">Быстрый просмотр</a></div>
@@ -305,7 +307,7 @@
                   <b class="price">355 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное с кусочками черного шоколада</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с кусочками черного шоколада</span></a>
             </article>
             <article class="catalog-item">
               <div class="quick-view">
@@ -316,7 +318,7 @@
                   <b class="price">420 &#8381/кг</b>
                 </a>
               </div>
-              <a class="product" href="#" title="Хочу это мороженое!">Сливочное с  мятным сиропом</a>
+              <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с  мятным сиропом</span></a>
             </article>
           </div>
           <div class="pagination clearfix">
@@ -355,10 +357,10 @@
                   <a class="providers" href="#">Для поставщиков</a>
                 </li>
                 <li>
-                  <a href="#">О производстве</a>
+                  <a href="#">Наши документы</a>
                 </li>
                 <li>
-                  <a href="#">Наши документы</a>
+                  <a href="#">О производстве</a>
                 </li>
                 <li>
                   <a href="#">Экологические стандарты</a>
@@ -367,7 +369,7 @@
             </section>
             <section class="footer-copyright">
               <a href="#"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="HTML Academy"></a>
-              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017
+              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy 2017
             </section>
           </div>
         </footer>
