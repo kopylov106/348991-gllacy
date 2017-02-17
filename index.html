@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>GlassyShop</title>
   </head>
@@ -145,7 +145,7 @@
                 <div class="image-price">
                   <a href="#">
                     <img src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                    <b class="price">310&#8381/кг</b>
+                    <b class="price">310<span class="ruble-sign"></span>/кг</b>
                   </a>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
@@ -157,7 +157,7 @@
                 <div class="image-price">
                   <a href="#">
                     <img src="img/coffe.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-                    <b class="price">380&#8381/кг</b>
+                    <b class="price">380<span class="ruble-sign"></span>/кг</b>
                   </a>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-кофейное с кусочками шоколада</span></a>
@@ -169,7 +169,7 @@
                 <div class="image-price">
                   <a href="#">
                     <img src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                    <b class="price">355&#8381/кг</b>
+                    <b class="price">355<span class="ruble-sign"></span>/кг</b>
                   </a>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
@@ -181,29 +181,29 @@
                 <div class="image-price">
                   <a href="#">
                     <img src="img/creme_brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
-                    <b class="price">415&#8381/кг</b>
+                    <b class="price">415<span class="ruble-sign"></span>/кг</b>
                   </a>
                 </div>
                 <a class="product" href="#" title="Хочу это мороженое!"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
               </article>
             </div>
             <section class="about-shop clearfix">
-              <h2 class="subtitle">Магазин Глейси &#8212 это онлайн и оффлайн магазин по продаже мороженого собственного производства на развес.</h2>
+              <h2 class="subtitle">Магазин Глейси &mdash это онлайн и оффлайн магазин по продаже мороженого собственного производства на развес.</h2>
                 <ul>
                   <li>
-                    <img src="img/icecream_mini.png" width="49" height="49">
+                    <img src="img/icecream_mini.png" width="49" height="49" alt="Иконка">
                     <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                   </li>
                   <li>
-                    <img src="img/cow_mini.png" width="49" height="49">
+                    <img src="img/cow_mini.png" width="49" height="49" alt="Иконка">
                     <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                   </li>
                   <li>
-                    <img src="img/sheet_mini.png" width="49" height="49">
+                    <img src="img/sheet_mini.png" width="49" height="49" alt="Иконка">
                     <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качетсва. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                   </li>
                   <li>
-                    <img src="img/thermometer_mini.png" width="49" height="49">
+                    <img src="img/thermometer_mini.png" width="49" height="49" alt="Иконка">
                     <p>Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                   </li>
                 </ul>
@@ -231,8 +231,11 @@
               </div>
             </div>
           </div>
-          <div class="map">
-            <img src="img/map.jpg" width="1200" height="430" alt="Здесь должна быть карта с нашим местоположением">
+        </main>
+      </div>
+      <div class="map">
+        <div class="supporting">
+          <div class="container">
             <section class="requisites">
               <span>Адрес главного офиса<br>и офлайн магазина:</span><br>
               <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong><br><br>
@@ -261,7 +264,12 @@
               </form>
             </section>
           </div>
-        </main>
+        </div>
+        <div class="yandex-map">
+          <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZtC42Pq"></iframe>
+        </div>
+      </div>
+      <div class="container">
         <footer class="main-footer">
           <div class="container-inner">
             <section class="footer-social">
@@ -298,12 +306,12 @@
             </section>
             <section class="footer-copyright">
               <a href="#"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="HTML Academy"></a>
-              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy 2017
+              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
             </section>
           </div>
         </footer>
       </div>
     </div>
-    <script src="js/feedback-form.js"></script>
+    <script src="js/feedback-form.min.js"></script>
   </body>
 </html>

@@ -1130,8 +1130,39 @@ input:hover {
 .map {
   position: relative;
 
-  min-height: 430px;
+  height: 430px;
   margin-bottom: -4px;
+
+  background: url("../img/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.supporting {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  min-height: 430px;
+}
+
+.supporting .container {
+  position: relative;
+
+  width: 100%;
+  height: 430px;
+  margin: 0 auto;
+}
+
+.yandex-map {
+  position: relative;
+  z-index: 1;
+}
+
+.yandex-map iframe {
+  width: 100%;
+  height: 430px;
+  border-style: none;
 }
 
 @keyframes bounce {
@@ -1294,6 +1325,7 @@ input:hover {
   position: absolute;
   top: 14.5%;
   right: 2.3%;
+  z-index: 2;
 
   width: 302px;
   height: 302px;
@@ -1837,6 +1869,23 @@ input[type="checkbox"]:disabled + span:hover::before {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+.ruble-sign{
+  padding-left: 30px;
+}
+
+.ruble-sign::before {
+  content: "";
+  position: absolute;
+  left: 75px;
+
+  width: 33px;
+  height: 43px;
+
+  background: url("../img/sprite.png");
+  background-position: -1188px 1px;
+  background-repeat: no-repeat;
+}
+
 .catalog-item {
   position: relative;
 
@@ -2145,7 +2194,7 @@ input[type="checkbox"]:disabled + span:hover::before {
 .social-btn-vk {
   background-image: url("../img/sprite.png");
   background-position: -152px -8px;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .social-btn-vk:hover {
